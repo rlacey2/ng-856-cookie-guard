@@ -1,0 +1,17 @@
+<section class="panel">
+  <p class="eyebrow">PROTECTED ROUTE</p>
+  <h1>Alpha</h1>
+  <p>This route can only be activated after the user has made a cookie-consent choice.</p>
+
+  <div class="status">
+    <strong>Consent decision recorded:</strong>
+    <span>{{ cookieService.hasChosenConsent() ? 'Yes' : 'No' }}</span>
+  </div>
+  <div class="status">
+    <strong>Optional cookies enabled:</strong>
+    <span>{{ cookieService.hasConsented() ? 'Yes' : 'No' }}</span>
+  </div>
+
+  <button type="button" (click)="resetConsent()">Reset consent</button>
+  <p class="hint">Resetting removes both stored values, leaves Alpha, and displays the consent modal again.</p>
+</section>

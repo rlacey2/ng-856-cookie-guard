@@ -1,0 +1,25 @@
+<section class="content-card">
+  <p class="eyebrow">ANGULAR SIGNALS DEMO</p>
+  <h1>Cookie consent and route protection</h1>
+  <p>
+    Choose your cookie preferences in the dialog. Both Alpha and Beta are protected
+    by a functional route guard and become available after you make a choice.
+  </p>
+  <p>
+    Rejecting optional cookies is a valid consent decision: essential cookies remain
+    enabled, and the protected routes are still available.
+  </p>
+  <div class="links">
+    <a routerLink="/alpha">Open Alpha</a>
+    <a routerLink="/beta">Open Beta</a>
+  </div>
+</section>
+
+<style>
+  .content-card { padding: 2rem; border: 1px solid #e2e8f0; border-radius: 1rem; background: #fff; }
+  .eyebrow { color: #2563eb; font-size: .75rem; font-weight: 800; letter-spacing: .12em; }
+  h1 { color: #0f172a; }
+  p { max-width: 48rem; color: #475569; line-height: 1.7; }
+  .links { display: flex; gap: 1rem; margin-top: 1.5rem; }
+  .links a { padding: .75rem 1rem; border-radius: .6rem; color: #fff; background: #2563eb; text-decoration: none; }
+</style>

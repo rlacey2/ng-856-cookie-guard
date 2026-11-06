@@ -1,0 +1,13 @@
+<section class="panel">
+  <p class="eyebrow">PROTECTED ROUTE</p>
+  <h1>Beta</h1>
+  <p>Beta uses the same root-provided CookieService as Alpha.</p>
+
+  <h2>Current preferences</h2>
+  <ul>
+    <li>Essential: always enabled</li>
+    <li>Analytics: {{ cookieService.consent()?.analytics ? 'Enabled' : 'Disabled' }}</li>
+    <li>Marketing: {{ cookieService.consent()?.marketing ? 'Enabled' : 'Disabled' }}</li>
+  </ul>
+  <p class="hint">Use Alpha to reset the decision and test the consent modal again.</p>
+</section>
